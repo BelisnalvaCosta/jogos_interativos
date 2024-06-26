@@ -8,7 +8,7 @@ Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
 </h1>
 
 Este projeto foi feito para complementar as horas extracurriculares.
-![Genesis - inicio (2)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/455820bc-e459-40dc-8588-2aab82fe9aa6)
+![Genius - inicio (2)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/1dfc0259-0ab1-4fca-ab67-ace8283db8e5)
 - [Link do Projeto](http://127.0.0.1:5500/index.html)
 
 ## Objetivo
