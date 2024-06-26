@@ -3,7 +3,7 @@
 Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
 
 <h1>
-    <a href="https://univesp.br/">
+    ![Genesis - inicio (2)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/63971328-c50a-4b99-9f09-628e83699b9e)
      <img align="center" width="40px" src=".png"></a>
     <span> Projeto Jogos Interativos - Trabalho Voluntário </span>
 </h1>
@@ -11,7 +11,7 @@ Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
 Repositório desenvolvido para fins educativos, com a disponibilização de materiais de apoio.
 Este projeto foi feito para cumprimento das horas extracurriculares - Tema: Ética e Cidadania e a importância da Computação em seu desempenho funcional e comportamental.
 
-[![Link do Projeto](https://github.com/BelisnalvaCosta/jogos_interativos/tree/master)
+[![Link do Projeto](http://127.0.0.1:5500/index.html)
 
 ## Objetivo
 Projeto informativo da jornada no Campus Expert e levar conhecimentos de Tecnologia para todos(as)!.
