@@ -10,8 +10,6 @@ Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
 Este projeto foi feito para complementar as horas extracurriculares.
 ![Genesis - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/f34ddcb0-11d3-44c3-8ce5-ea581e2da4e2)
 
-- [Link do Projeto](http://0.0.0.1:5500/index.html)
-
 ## Objetivo
 Projeto informativo da jornada no Campus Expert e levar conhecimentos de Tecnologia para todos(as)!.
 
