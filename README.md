@@ -7,9 +7,8 @@ Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
     <span> Projeto Jogos Interativos - Trabalho Voluntário </span>
 </h1>
 
-Este projeto foi feito para cumprimento das horas extracurriculares - Tema: Ética e Cidadania e a importância da Computação em seu desempenho funcional e comportamental.
-
-![image](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/57034488-1c53-4ef1-b949-205fe9f03332)
+Este projeto foi feito para complementar as horas extracurriculares.
+![Genesis - inicio (2)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/455820bc-e459-40dc-8588-2aab82fe9aa6)
 - [Link do Projeto](http://127.0.0.1:5500/index.html)
 
 ## Objetivo
@@ -17,7 +16,7 @@ Projeto informativo da jornada no Campus Expert e levar conhecimentos de Tecnolo
 
 # Tecnologia  utilizada:
 
-## Back-end e Front-end
+## Front-end
 
 ## LINGUAGEM:
 ![HTML](https://img.shields.io/badge/HTML-000?style=for-the-badge&logo=html5&logoColor=30A3DC)
@@ -34,7 +33,7 @@ Projeto informativo da jornada no Campus Expert e levar conhecimentos de Tecnolo
         <span><b>Belisnalva Costa</b></span>
       </a>
       <br>
-      <span>Aprendendo a desenvolver Back-end e Front-end "FullStack"</span>    
+      <span> Desenvolvendo e aprendendo a cada dia Front-end </span>    
     </td>
   </tr>
 </table>
@@ -45,4 +44,4 @@ Projeto informativo da jornada no Campus Expert e levar conhecimentos de Tecnolo
  
 <div align="center">Feito com 💙 por <a href="https://github.com/BelisnalvaCosta/">Bella</a>.</div>
 
-[^1]: O projeto jogo da memória estilo Genesis é de autoria da Expert Gabriela Pinheiro (dio), porém o jogo Perguntas e respostas bíblicas é de minha autoria com o auxilio do ChatGPT.
+[^1]: O projeto jogo da memória estilo Genesis é de autoria da Expert Gabriela Pinheiro (dio).
