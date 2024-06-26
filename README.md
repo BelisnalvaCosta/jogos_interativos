@@ -3,16 +3,16 @@
 Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
 
 <h1>
-     <img align="center" width="40px" src=".png"></a>
+     <a href="http://127.0.0.1:5501/Perguntas_E_Respostas/src/main/java/interativo/index.html">
+     <img align="center" width="40px" src="![Jogo do Tabernáculo de Deus  - 0](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/547276d7-6840-43e9-bbf2-98beb47df839)
+"></a>
     <span> Projeto Jogos Interativos - Trabalho Voluntário </span>
 </h1>
 
 Este projeto foi feito para complementar as horas extracurriculares.
-![Genesis - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/f34ddcb0-11d3-44c3-8ce5-ea581e2da4e2)
-
-## Objetivo
-Projeto informativo da jornada no Campus Expert e levar conhecimentos de Tecnologia para todos(as)!.
-
+![Genius - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/f34ddcb0-11d3-44c3-8ce5-ea581e2da4e2)
+![Jogo do Tabernáculo - inicio](https://github.com/BelisnalvaCosta/game-interactive/assets/72033269/ded1f4f0-3628-4156-b7b3-f95b55003acf)
+- [GAME](http://127.0.0.1:5501/Perguntas_E_Respostas/src/main/java/interativo/index.html)
 # Tecnologia  utilizada:
 
 ## Front-end
