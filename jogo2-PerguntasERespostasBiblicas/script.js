@@ -1,4 +1,3 @@
-// javaScript.js
 let perguntas = [
     "Qual era o propósito principal do Tabernáculo mencionado em Êxodo 25:8?",
     "O que Deus pediu para ser trazido voluntariamente para a construção do Tabernáculo?",

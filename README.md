@@ -4,14 +4,14 @@ Pojeto feito na IDE Visual Studio Code em Html, CSS e Javascript[^1].
 
 <h1>
      <a href="http://127.0.0.1:5501/Perguntas_E_Respostas/src/main/java/interativo/index.html">
-     <img align="center" width="40px" src="jogo2-PerguntasERespostasBiblicas\img\Jogo do Tabernáculo - inicio.png
-"></a>
+     <img align="center" width="40px" src="https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/f34ddcb0-11d3-44c3-8ce5-ea581e2da4e2"></a>
+
     <span> Projeto Jogos Interativos - Trabalho Voluntário </span>
 </h1>
 
 Este projeto foi feito para complementar as horas extracurriculares.
 
-- [Genius_Memory - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/f34ddcb0-11d3-44c3-8ce5-ea581e2da4e2)
+- [Genius_Memory](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/f34ddcb0-11d3-44c3-8ce5-ea581e2da4e2)
 
 - [Game_Tabernaculo](c:\Users\notebook.local\AppData\Local\Packages\Microsoft.Windows.Photos_8wekyb3d8bbwe\TempState\SharingTemp\Jogo Tabernáculo de Deus exception_LI (2).jpg)
 
