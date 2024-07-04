@@ -4,7 +4,10 @@ Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o 
 <table>
    <tr>
     <td>
-      <img width="80px" align="center" src="https://avatars.githubusercontent.jogo4-PergEResposta\images\Jogo de Perguntas Bíblicas.png"/> 
+      <img width="80px" align="center" src="https://avatars.githubusercontent.jogos_interativos/assets/72033269/0caf6edf-7b30-4d56-bb6c-b148d7fcf9e7)
+"/> 
+       ![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca)
+
     </td>
      <td align="left">
        <a href="http://127.0.0.1:5502/jogo4-PergEResposta/index.html">
