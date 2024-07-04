@@ -1,33 +1,7 @@
 # Jogo interativo Perguntas e Respostas. [^1].
 
 Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o trabalho voluntário com crianças e a tecnologia, sendo assim criando jogos interativos para melhor compreensão das lições bíblicas.
-<table>
-   <tr>
-    <td>
-      <img width="80px" align="center" src="https://avatars.githubusercontent.jogos_interativos/assets/72033269/0caf6edf-7b30-4d56-bb6c-b148d7fcf9e7)
-"/> 
-       ![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca)
-
-    </td>
-     <td align="left">
-       <a href="http://127.0.0.1:5502/jogo4-PergEResposta/index.html">
-         <span>Perguntas Bíblicas</span>
-       </a>a>
-     </td>
-   </tr>
-   <tr>
-    <td>
-      <img width="80px" align="center" src="https://avatars.githubusercontent.jogos_interativos/assets/72033269/1815cb84-f66e-4cc3-8c9c-9e87783ff94a)
-"/> 
-    </td>
-     <td align="left">
-       <a href="">
-         <span>Genius Memory</span>
-       </a>a>
-     </td>
-   </tr>
-</table>
-
+![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca)
 ![GeniusMemory - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/28f33995-147c-4334-a5f1-211a8619ca2e)
 
 # Tecnologia  utilizada:
