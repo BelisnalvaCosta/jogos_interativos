@@ -1,8 +1,10 @@
 # Jogo interativo Perguntas e Respostas. [^1].
 
 Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o trabalho voluntário com crianças e a tecnologia, sendo assim criando jogos interativos para melhor compreensão das lições bíblicas.
-![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca)
-![GeniusMemory - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/28f33995-147c-4334-a5f1-211a8619ca2e)
+
+<img <img width="80px" align="center" src=" ![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca) "/>
+
+<img <img width="80px" align="center" src=" ![GeniusMemory - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/28f33995-147c-4334-a5f1-211a8619ca2e) "/>
 
 # Tecnologia  utilizada:
 
