@@ -1,0 +1,69 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5502/Jogo1-GeniusMemory/index.html
+Subject: Genius Memory
+Date: Wed, 3 Jul 2024 21:58:19 -0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--MHbQdASCkRpVmS2DTAzTEBOVkvOL8AbMLDcF3I2edN----"
+
+
+------MultipartBoundary--MHbQdASCkRpVmS2DTAzTEBOVkvOL8AbMLDcF3I2edN----
+Content-Type: text/html
+Content-ID: <frame-91035F113B42BCC6648A8B48926A01F0@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5502/Jogo1-GeniusMemory/index.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <link rel=3D"stylesheet" href=3D"http://127.0.0.1:5502/Jogo1-GeniusMemo=
+ry/style.css">
+    <title>Genius Memory</title>
+</head>
+<body>
+    <div class=3D"main-game">
+        <div class=3D"genius">
+            <div class=3D"blue selected"></div>
+            <div class=3D"yellow selected"></div>
+            <div class=3D"red"></div>
+            <div class=3D"green"></div>
+        </div>
+    </div>
+   =20
+<!-- Code injected by live-server -->
+
+
+</body></html>
+------MultipartBoundary--MHbQdASCkRpVmS2DTAzTEBOVkvOL8AbMLDcF3I2edN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5502/Jogo1-GeniusMemory/style.css
+
+@charset "utf-8";
+
+body { margin: 0px; background-color: rgb(179, 185, 235); }
+
+.main-game { height: 100vh; width: 100vw; display: flex; justify-content: c=
+enter; align-items: center; }
+
+.genius { display: grid; grid-template-areas: "verde vermelho" "amarelo azu=
+l"; gap: 10px; border: 1px solid rgb(255, 255, 255); background-color: rgb(=
+255, 255, 255); border-radius: 100%; width: 700px; height: 700px; }
+
+.blue { grid-area: azul; background-color: rgb(2, 2, 110); border-bottom-ri=
+ght-radius: 100%; }
+
+.red { grid-area: vermelho; background-color: rgb(139, 2, 2); border-top-ri=
+ght-radius: 100%; }
+
+.yellow { grid-area: amarelo; background-color: rgb(146, 146, 2); border-bo=
+ttom-left-radius: 100%; }
+
+.green { grid-area: verde; background-color: rgb(2, 85, 2); border-top-left=
+-radius: 100%; }
+
+.selected { opacity: 0.8; }
+------MultipartBoundary--MHbQdASCkRpVmS2DTAzTEBOVkvOL8AbMLDcF3I2edN------

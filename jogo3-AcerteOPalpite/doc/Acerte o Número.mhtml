@@ -1,0 +1,77 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5502/jogo3-AcerteOPalpite/index.html
+Subject: =?utf-8?Q?Acerte=20o=20N=C3=BAmero?=
+Date: Wed, 3 Jul 2024 23:17:59 -0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Hb6BU4qpnqVm4gLDZaS8VCl0TT0iG6LdmEmUImETvf----"
+
+
+------MultipartBoundary--Hb6BU4qpnqVm4gLDZaS8VCl0TT0iG6LdmEmUImETvf----
+Content-Type: text/html
+Content-ID: <frame-DD1EDD3407B1CEB83BE9BCC0144CBE6D@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5502/jogo3-AcerteOPalpite/index.html
+
+<!DOCTYPE html><html lang=3D"pt-BR"><head><meta http-equiv=3D"Content-Type"=
+ content=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Acerte o N=C3=BAmero</title>
+    <link rel=3D"stylesheet" href=3D"http://127.0.0.1:5502/jogo3-AcerteOPal=
+pite/styles.css">
+</head>
+<body>
+    <div class=3D"container">
+        <h1>Acerte o palpite</h1>
+        <p id=3D"description">Estou pensando em um n=C3=BAmero entre 1 e 10=
+0...</p>
+        <div class=3D"input-container">
+            <input type=3D"text" id=3D"guessInput" placeholder=3D"Digite se=
+u palpite">
+            <button id=3D"guessButton">Enviar</button>
+        </div>
+        <div id=3D"message"></div>
+        <button id=3D"resetButton">Reiniciar</button>
+        <button id=3D"toggleButton">Alternar para palavras</button>
+    </div>
+   =20
+<!-- Code injected by live-server -->
+
+
+</body></html>
+------MultipartBoundary--Hb6BU4qpnqVm4gLDZaS8VCl0TT0iG6LdmEmUImETvf----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5502/jogo3-AcerteOPalpite/styles.css
+
+@charset "utf-8";
+
+body { font-family: Arial, sans-serif; display: flex; justify-content: cent=
+er; align-items: center; height: 100vh; background-color: rgb(180, 221, 240=
+); margin: 0px; }
+
+.container { max-width: 600px; width: 100%; text-align: center; background:=
+ white; padding: 20px; border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.1) 0=
+px 0px 10px; }
+
+h1 { margin-bottom: 20px; }
+
+.input-container { display: flex; justify-content: center; margin-top: 20px=
+; }
+
+input { padding: 10px; font-size: 16px; border: 1px solid rgb(204, 204, 204=
+); border-radius: 4px; margin-right: 10px; width: 70%; }
+
+button { padding: 10px 20px; font-size: 16px; border: none; border-radius: =
+4px; cursor: pointer; }
+
+button:hover { background-color: rgb(120, 228, 204); color: rgb(235, 228, 2=
+28); }
+
+#message { margin-top: 20px; }
+
+#resetButton, #toggleButton { margin-top: 20px; }
+------MultipartBoundary--Hb6BU4qpnqVm4gLDZaS8VCl0TT0iG6LdmEmUImETvf------

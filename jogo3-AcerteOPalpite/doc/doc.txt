@@ -1,0 +1,3 @@
+c:\Users\notebook.local\Downloads\Acerte o Número.mhtml
+
+http://127.0.0.1:5502/jogo3-AcerteOPalpite/index.html
