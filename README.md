@@ -1,7 +1,18 @@
 # Jogo interativo Perguntas e Respostas. [^1].
 
 Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o trabalho voluntário com crianças e a tecnologia, sendo assim criando jogos interativos para melhor compreensão das lições bíblicas.
-![PERGUNTAS_BÍBLICAS](<img width="80px" align="center" src="http://127.0.0.1:5502/jogo4-PergEResposta/index.html"/>)
+<table>
+   <tr>
+    <td>
+      <img width="80px" align="center" src="https://avatars.githubusercontent.jogo4-PergEResposta\images\Jogo de Perguntas Bíblicas.png"/> 
+    </td>
+     <td align="left">
+       <a href="http://127.0.0.1:5502/jogo4-PergEResposta/index.html">
+         <span>Perguntas Bíblicas</span>
+       </a>a>
+     </td>
+   </tr>
+</table>
 
 - [GAME]()
 ![GENIUSmEMORY]( http://127.0.0.1:5502/Jogo1-GeniusMemory/index.html)
