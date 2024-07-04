@@ -12,10 +12,20 @@ Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o 
        </a>a>
      </td>
    </tr>
+   <tr>
+    <td>
+      <img width="80px" align="center" src="https://avatars.githubusercontent.jogos_interativos/assets/72033269/1815cb84-f66e-4cc3-8c9c-9e87783ff94a)
+"/> 
+    </td>
+     <td align="left">
+       <a href="">
+         <span>Genius Memory</span>
+       </a>a>
+     </td>
+   </tr>
 </table>
 
-- [GAME]()
-![GENIUSmEMORY]( http://127.0.0.1:5502/Jogo1-GeniusMemory/index.html)
+![GeniusMemory - inicio (3)](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/28f33995-147c-4334-a5f1-211a8619ca2e)
 
 # Tecnologia  utilizada:
 
