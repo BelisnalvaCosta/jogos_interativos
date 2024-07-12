@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Bíblico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c3f1dc;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e2e8ee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 10px 0;
+        }
+        #btnResponder {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        #btnResponder:disabled {
+            background-color: #ccc;
+        }
+        #feedback {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        #pontuacao {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="pergunta" class="question"></div>
+    <div id="opcoes" class="options"></div>
+    <button id="btnResponder" onclick="responder()">Responder</button>
+    <div id="feedback"></div>
+    <div id="pontuacao"></div>
+</div>
+
+<script>
+let perguntas = [
+    "Qual era o propósito principal do Tabernáculo mencionado em Êxodo 25:8?",
+    "O que Deus pediu para ser trazido voluntariamente para a construção do Tabernáculo?",
+    "Quais materiais foram usados para fazer o Tabernáculo?",
+    "Qual era o nome do homem que Deus chamou para construir o Tabernáculo?"
+];
+
+let opcoesResposta = [
+    ["A) Ser um lugar de adoração a outros deuses", "B) Ser um lugar de habitação de Deus no meio do povo de Israel", "C) Ser um lugar para esconder tesouros"],
+    ["A) Ouro e prata", "B) Flores e perfumes", "C) Ofertas voluntárias de todo coração"],
+    ["A) Pedras preciosas", "B) Madeira de acácia, ouro, prata e bronze", "C) Madeira e barro"],
+    ["A) Moisés", "B) Arão", "C) Bezalel"]
+];
+
+let respostasCorretas = [1, 2, 1, 2]; // Índice da resposta correta para cada pergunta
+
+let pontuacao = 0;
+let perguntaAtual = 0;
+
+function iniciarJogo() {
+    exibirPergunta();
+}
+
+function exibirPergunta() {
+    let pergunta = document.getElementById("pergunta");
+    let opcoes = document.getElementById("opcoes");
+    let btnResponder = document.getElementById("btnResponder");
+    let feedback = document.getElementById("feedback");
+    let pontuacaoElement = document.getElementById("pontuacao");
+
+    pergunta.innerHTML = perguntas[perguntaAtual];
+
+    opcoes.innerHTML = "";
+    opcoesResposta[perguntaAtual].forEach((opcao, index) => {
+        let input = `<label><input type="radio" name="resposta" value="${index}"> ${opcao}</label>`;
+        opcoes.innerHTML += input;
+    });
+
+    btnResponder.disabled = false;
+    feedback.innerHTML = "";
+    pontuacaoElement.innerHTML = "Pontuação: " + pontuacao;
+}
+
+function responder() {
+    let opcoes = document.getElementsByName("resposta");
+    let respostaUsuario = -1;
+
+    for (let i = 0; i < opcoes.length; i++) {
+        if (opcoes[i].checked) {
+            respostaUsuario = parseInt(opcoes[i].value);
+            break;
+        }
+    }
+
+    if (respostaUsuario === -1) {
+        alert("Por favor, selecione uma resposta.");
+        return;
+    }
+
+    let feedback = document.getElementById("feedback");
+
+    if (respostaUsuario === respostasCorretas[perguntaAtual]) {
+        feedback.innerHTML = "Resposta correta!";
+        pontuacao++;
+    } else {
+        feedback.innerHTML = "Resposta incorreta. A resposta correta é: " + opcoesResposta[perguntaAtual][respostasCorretas[perguntaAtual]];
+    }
+
+    perguntaAtual++;
+    if (perguntaAtual < perguntas.length) {
+        setTimeout(exibirPergunta, 2000);
+    } else {
+        setTimeout(() => {
+            let container = document.querySelector(".container");
+            container.innerHTML = `<h1>Fim do jogo!</h1><p>Sua pontuação final: ${pontuacao} de ${perguntas.length}</p>`;
+        }, 2000);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", iniciarJogo);
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

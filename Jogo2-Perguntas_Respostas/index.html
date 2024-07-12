@@ -1,3 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Bíblico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c3f1dc;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e2e8ee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 10px 0;
+        }
+        #btnResponder {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        #btnResponder:disabled {
+            background-color: #ccc;
+        }
+        #feedback {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        #pontuacao {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="pergunta" class="question"></div>
+    <div id="opcoes" class="options"></div>
+    <button id="btnResponder" onclick="responder()">Responder</button>
+    <div id="feedback"></div>
+    <div id="pontuacao"></div>
+</div>
+
+<script>
 let perguntas = [
     "Qual era o propósito principal do Tabernáculo mencionado em Êxodo 25:8?",
     "O que Deus pediu para ser trazido voluntariamente para a construção do Tabernáculo?",
@@ -68,12 +132,17 @@ function responder() {
 
     perguntaAtual++;
     if (perguntaAtual < perguntas.length) {
-        exibirPergunta();
+        setTimeout(exibirPergunta, 2000);
     } else {
-        let container = document.querySelector(".container");
-        container.innerHTML = `<h1>Fim do jogo!</h1><p>Sua pontuação final: ${pontuacao} de ${perguntas.length}</p>`;
+        setTimeout(() => {
+            let container = document.querySelector(".container");
+            container.innerHTML = `<h1>Fim do jogo!</h1><p>Sua pontuação final: ${pontuacao} de ${perguntas.length}</p>`;
+        }, 2000);
     }
 }
 
-// Iniciar o jogo quando a página carregar
 document.addEventListener("DOMContentLoaded", iniciarJogo);
+</script>
+
+</body>
+</html>
