@@ -3,9 +3,9 @@
 Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o trabalho voluntário com crianças e a tecnologia, sendo assim criando jogos interativos para melhor compreensão das lições bíblicas.
 
 ![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca)
-![G](http://127.0.0.1:5502/jogo4-PergEResposta/index.html)
+- [GAME4](http://127.0.0.1:5502/jogo4-PergEResposta/index.html)
 - [GAME](https://belisnalvacosta.github.io/jogos_interativos/)
-- [GAME](http://127.0.0.1:5502/Jogo2-Perguntas_Respostas/index.html)
+- [GAME2](http://127.0.0.1:5502/Jogo2-Perguntas_Respostas/index.html)
 
 # Tecnologia  utilizada:
 
