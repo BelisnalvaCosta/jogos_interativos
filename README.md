@@ -6,6 +6,7 @@ Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o 
 - [GAME4](http://127.0.0.1:5502/jogo4-PergEResposta/index.html)
 - [GAME](https://belisnalvacosta.github.io/jogos_interativos/)
 - [GAME2](http://127.0.0.1:5502/Jogo2-Perguntas_Respostas/index.html)
+- [GAME1](http://127.0.0.1:5502/Jogo1-GeniusMemory/index.html)
 
 # Tecnologia  utilizada:
 
