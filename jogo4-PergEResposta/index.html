@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo de Perguntas Bíblicas</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Perguntas e Respostas - Jogo</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="container">
-        <h1>Jogo de Perguntas Bíblicas</h1>
-        <div id="quiz-container">
-            <div id="image-container"></div>
-            <div id="question-container"></div>
-            <div id="answer-buttons" class="btn-grid"></div>
-            <button id="next-btn" class="btn hide">Próxima</button>
-            <div id="result-container"></div>
-        </div>
+        <h1>Perguntas e Respostas</h1>
+
+        <!-- Exibe o número da rodada (atualizado pelo script.js) -->
+        <div id="rodada-container" class="rodada" aria-live="polite"></div>
+
+        <div id="question-container" class="question"></div>
+
+        <div id="image-container"></div>
+
+        <div id="answer-buttons" class="btn-grid"></div>
+
+        <div id="result-container" aria-live="polite"></div>
+
+        <button id="next-btn" class="btn hide">Próxima</button>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

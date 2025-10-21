@@ -1,44 +1,64 @@
-# Jogo interativo Perguntas e Respostas [^1].
+# jogos_interativos
 
-Este projeto foi feito na IDE Visual Studio Code, com o objetivo de conciliar o trabalho voluntário com crianças e a tecnologia, sendo assim criando jogos interativos para melhor compreensão das lições bíblicas.
+Coleção de pequenos jogos em HTML/CSS/JS com fins educativos e de prática.
 
-![Jogo de Perguntas Bíblicas](https://github.com/BelisnalvaCosta/jogos_interativos/assets/72033269/629feea9-cd64-4a8b-a664-150d46cabeca)
+## Jogo: jogo4-PergEResposta
 
-- [GAME4](http://127.0.0.1:5502/jogo4-PergEResposta/index.html)
-- [GAME3](http://127.0.0.1:5502/jogo3-AcerteOPalpite/index.html)
-- [GAME2](http://127.0.0.1:5502/Jogo2-Perguntas_Respostas/index.html)
-- [GAME1](http://127.0.0.1:5502/Jogo1-GeniusMemory/index.html)
-- [GAMES](https://belisnalvacosta.github.io/jogos_interativos/)
+Este é o jogo de Perguntas e Respostas. As principais mudanças/recursos incluídos:
 
-# Tecnologia  utilizada
+- Perguntas embaralhadas a cada ciclo (não se repetem até que todas as perguntas sejam exibidas).
+- Exibição do número da rodada e do progresso (ex.: "Rodada: 1 — Pergunta 2 de 4").
+- Pontuação acumulada (por padrão, não zera automaticamente entre ciclos — se quiser zerar ao finalizar um ciclo, edite `script.js` e remova o comentário na linha indicada).
+- Arquivos principais:
+  - jogo4-PergEResposta/index.html
+  - jogo4-PergEResposta/script.js
+  - jogo4-PergEResposta/styles.css
+  - imagens em jogo4-PergEResposta/images/
 
-## Front-end
+## Como usar localmente
 
-## LINGUAGEM:
+1. Clone o repositório:
+   ```
+   git clone https://github.com/BelisnalvaCosta/jogos_interativos.git
+   ```
+2. Entre na pasta do jogo:
+   ```
+   cd jogos_interativos/jogo4-PergEResposta
+   ```
+3. Abra `index.html` no seu navegador (clique duas vezes ou use uma extensão de servidor local).
 
-![HTML](https://img.shields.io/badge/HTML-000?style=for-the-badge&logo=html5&logoColor=30A3DC)
-![CSS](https://img.shields.io/badge/CSS-000?style=for-the-badge&logo=css3&logoColor=E94D5F)
-![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript&logoColor=30A3DC)
+Se preferir, copie o conteúdo de `script.js` e cole onde preferir (por exemplo, inline em index.html) — o arquivo `script.js` está pronto para uso.
 
-  <table>
-  <tr>
-    <td>
-      <img width="80px" align="center" src="https://avatars.githubusercontent.com/BelisnalvaCosta"/>
-    </td>
-    <td align="left">
-      <a href="https://github.com/BelisnalvaCosta">
-        <span><b>Belisnalva Costa</b></span>
-      </a>
-      <br>
-      <span>Aprendendo a desenvolver Front-end na prática!</span>
-    </td>
-  </tr>
-</table>
+## Publicação gratuita (recomendações rápidas)
 
-## Referências
+- GitHub Pages:
+  1. Faça push das mudanças para a branch principal (`master`).
+  2. No GitHub, vá em Settings → Pages e escolha a branch `master` e a pasta (root).
+  3. O site ficará disponível em `https://BelisnalvaCosta.github.io/jogos_interativos/jogo4-PergEResposta/`.
 
-- [Gabriela Pinheiro](https://github.com/SpruceGabriela/genesis-dio)
+- Netlify / Vercel:
+  1. Crie conta e conecte ao GitHub.
+  2. Selecione o repositório e a pasta raiz (não há build para site estático).
+  3. Deploy automático a cada push.
 
-- [Revistas Lições Bíblicas](https://www.bing.com/images/search?view=detailV2&ccid=HZwE2%2B2X&id=15000409E340BA12FB8FC395BBE8B15D98B8E393&thid=OIP.HZwE2-2XRDyedFh2vnFJigHaIp&mediaurl=https%3A%2F%2Fhttp2.mlstatic.com%2FD_NQ_NP_602794-MLB50049556457_052022-F.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.1d9c04dbed97443c9e745876be71498a%3Frik%3Dk%252bO4mF2x6LuVww%26pid%3DImgRaw%26r%3D0&exph=1000&expw=857&q=cpad+revistas+3+trimestre+2022&simid=608020383253730130&form=IRPRST&ck=14F5F1C612A10DD02D6642C35E37240F&selectedindex=2&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11)
+## Licença
 
-[^1]: Este projeto é um protótipo que elaborei com apoio da IA generativa, para corrigir bugs e aperfeiçoamento do Projeto de Jogos Interativos.
+Este repositório está licenciado sob a MIT License — veja o arquivo `LICENSE`.
+
+## Como aplicar as alterações no repositório (exemplo de sequência de comandos)
+
+1. Crie a branch (se ainda não existir localmente):
+   ```
+   git checkout -b melhorias/perguntas-embaralhadas
+   ```
+2. Substitua `jogo4-PergEResposta/script.js` e `jogo4-PergEResposta/index.html` pelo novo conteúdo (ou copie/cole conforme preferir).
+3. Adicione LICENSE no root do repositório.
+4. Commit e push:
+   ```
+   git add .
+   git commit -m "Embaralhar perguntas por rodada; adicionar exibição de rodada; adicionar LICENSE MIT"
+   git push origin melhorias/perguntas-embaralhadas
+   ```
+5. Abra um Pull Request no GitHub e faça merge para `master`.
+
+---
