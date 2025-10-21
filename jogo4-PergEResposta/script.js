@@ -1,3 +1,5 @@
+// script.js - embaralha perguntas a cada ciclo e mostra o número da rodada
+
 const questions = [
     {
         question: "O que Deus enviou aos israelitas para comer no deserto?",
@@ -46,33 +48,58 @@ const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
 const resultContainer = document.getElementById('result-container');
 const imageContainer = document.getElementById('image-container');
+const rodadaContainer = document.getElementById('rodada-container');
 
-let currentQuestionIndex = 0;
+let shuffledIndices = [];
+let position = 0;
 let score = 0;
+let rodada = 1;
+
+function shuffleArray(array) {
+    // Fisher-Yates shuffle
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+function prepareNewCycle() {
+    // cria array de índices [0..n-1] e embaralha
+    shuffledIndices = shuffleArray(Array.from({ length: questions.length }, (_, i) => i));
+    position = 0;
+    updateRodadaDisplay();
+}
 
 function startGame() {
-    currentQuestionIndex = 0;
     score = 0;
+    rodada = 1;
+    prepareNewCycle();
     nextButton.innerText = 'Próxima';
     nextButton.classList.add('hide');
     showQuestion();
 }
 
+function updateRodadaDisplay() {
+    if (!rodadaContainer) return;
+    rodadaContainer.innerText = `Rodada: ${rodada}  — Pergunta ${position + 1} de ${questions.length}`;
+}
+
 function showQuestion() {
     resetState();
-    const currentQuestion = questions[currentQuestionIndex];
+    const qIndex = shuffledIndices[position];
+    const currentQuestion = questions[qIndex];
     questionContainer.innerText = currentQuestion.question;
-    imageContainer.innerHTML = `<img src="${currentQuestion.image}" alt="Imagem da pergunta">`;
+    imageContainer.innerHTML = currentQuestion.image ? `<img src="${currentQuestion.image}" alt="Imagem da pergunta">` : '';
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
-        if (answer.correct) {
-            button.dataset.correct = answer.correct;
-        }
+        button.dataset.correct = answer.correct ? 'true' : 'false';
         button.addEventListener('click', selectAnswer);
         answerButtons.appendChild(button);
     });
+    updateRodadaDisplay();
 }
 
 function resetState() {
@@ -81,7 +108,6 @@ function resetState() {
         answerButtons.removeChild(answerButtons.firstChild);
     }
     resultContainer.innerText = '';
-    imageContainer.innerHTML = '';
 }
 
 function selectAnswer(e) {
@@ -92,11 +118,15 @@ function selectAnswer(e) {
     }
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct === 'true');
+        button.disabled = true;
     });
-    if (currentQuestionIndex < questions.length - 1) {
+
+    if (position < shuffledIndices.length - 1) {
         nextButton.classList.remove('hide');
     } else {
         showResult();
+        nextButton.classList.remove('hide');
+        nextButton.innerText = 'Reiniciar ciclo';
     }
 }
 
@@ -115,13 +145,24 @@ function clearStatusClass(element) {
 }
 
 function showResult() {
-    nextButton.classList.add('hide');
-    resultContainer.innerText = `Você acertou ${score} de ${questions.length} perguntas!`;
+    resultContainer.innerText = `Você acertou ${score} de ${questions.length} perguntas no total.`;
 }
 
 nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    showQuestion();
+    if (position >= shuffledIndices.length - 1) {
+        // fim do ciclo -> embaralha novamente e incrementa rodada
+        shuffledIndices = shuffleArray(shuffledIndices);
+        position = 0;
+        rodada++;
+        nextButton.innerText = 'Próxima';
+        nextButton.classList.add('hide');
+        showQuestion();
+    } else {
+        position++;
+        nextButton.classList.add('hide');
+        showQuestion();
+    }
 });
 
+// Inicializa o jogo quando o script carregar
 startGame();
